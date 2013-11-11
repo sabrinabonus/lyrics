@@ -1,30 +1,48 @@
-p {
-  display: none;
-}
 
-.fixedcenter {
-	position: fixed;
-	/*background-color: #936940;*/
-	background-image:url(http://technicaldeathmetal.org/wp-content/uploads/2013/04/intrinsic1.jpg); 
-	overflow:hidden;
-	width: 500px;
-	padding: 20px;
-	margin-left: 300px;
-	height: 500px;
+body {
+	background-color: black;
+	/*background-image: url("../images/intrinsic1.jpg");
+	background-repeat: no-repeat;*/
+} 
+
+p  {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 300;
 	font-size: 1.5em;
-	color: white;
-	border: solid 1px black;
+	color: black;
+	display: none;
 }
+
+.lyrics-hole  {
+	position: fixed;
+	background-color: white;
+	opacity: 0.7;
+	filter:alpha(opacity=70); /* IE */
+	overflow:hidden;
+	width: 500px;
+	padding: 20px;
+	margin-top: 20px;
+	margin-left: 400px;
+	height: 200px;
+}
+
 
 .column {
 	position: absolute;
+	margin-top: -200px; 
+	margin-left: -200px;
 	z-index:-1;
-	min-height: 1000px;
+	min-height: 5000px;
 	float: left;
 	font-family: helvetica;
-	font-size: 2.5em;
-	color: #F0F0F0;
+	font-size: 2em;
+	color: #76748A;
 	text-align:justify;
+	border: solid 1px white;
+}
+
+.column img {
+	opacity:0.2;
+	filter:alpha(opacity=50); /* IE */
+	
 }

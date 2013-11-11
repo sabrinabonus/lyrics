@@ -1,9 +1,9 @@
-$(document).scroll(function() {
-  $( "p" ).first().show( "slow", function showNext() {
-    $( this ).next( "p" ).show( "slow", showNext );
+$( "#hide" ).hover(function() {
+	$( "p" ).first().show( 3000, function showNext() {
+    	$( this ).next( "p" ).show( 1500, showNext );
   });
 });
- 
-$( "#hide" ).hover(function() {
-  $( "p" ).hide( 5000 );
+
+$(document).scroll(function() {
+	$( "p" ).hide( 3000 );
 });
